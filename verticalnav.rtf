@@ -1,0 +1,184 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red202\green202\blue202;\red89\green138\blue67;\red23\green23\blue23;
+\red109\green109\blue109;\red70\green137\blue204;\red140\green211\blue254;\red194\green126\blue101;\red183\green111\blue179;
+\red66\green179\blue255;\red67\green192\blue160;\red212\green214\blue154;}
+{\*\expandedcolortbl;;\cssrgb\c83137\c83137\c83137;\cssrgb\c41569\c60000\c33333;\cssrgb\c11765\c11765\c11765;
+\cssrgb\c50196\c50196\c50196;\cssrgb\c33725\c61176\c83922;\cssrgb\c61176\c86275\c99608;\cssrgb\c80784\c56863\c47059;\cssrgb\c77255\c52549\c75294;
+\cssrgb\c30980\c75686\c100000;\cssrgb\c30588\c78824\c69020;\cssrgb\c86275\c86275\c66667;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf3 \cb4 \strokec3 <!--Vertical Nav Menu Code-->\cf2 \cb1 \strokec2 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf2 \cb4     \cf3 \strokec3 <!-- <lightning-card title="Available Reports">\cf2 \cb1 \strokec2 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf3 \cb4 \strokec3     <lightning-input onchange=\{handleKey\} name="enter-search" title="Search" type="search"></lightning-input>\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3         <div style="min-width: 225px; background-color: white; border-right: 1px solid #1d2464;">\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3                 <lightning-vertical-navigation selected-item=\{selectedItem\} onselect=\{handleSelect\} class="navigation">\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3                     <lightning-vertical-navigation-section label="Reports">\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3                         <lightning-vertical-navigation-item label="Recently Viewed" name="reports_recent"></lightning-vertical-navigation-item>\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3                         <lightning-vertical-navigation-item label="Private Reports" name="reports_private"></lightning-vertical-navigation-item>\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3                         <lightning-vertical-navigation-item label="Public Reports" name="reports_public"></lightning-vertical-navigation-item>\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3                         <lightning-vertical-navigation-item label="All Reports" name="reports_all"></lightning-vertical-navigation-item>\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3                         <lightning-vertical-navigation-item-badge label="Recently Updated" name="reports_updated" badge-count=\{updatedCount\}></lightning-vertical-navigation-item-badge>\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3                     </lightning-vertical-navigation-section>\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3                 </lightning-vertical-navigation>\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3         </div>\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3     </lightning-card>-->\cf2 \cb1 \strokec2 \
+\
+\cf3 \cb4 \strokec3 <!--Tree Approach -->\cf2 \cb1 \strokec2 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf2 \cb4  \cf3 \strokec3 <!--   <lightning-card title="Navigation Menu">\cf2 \cb1 \strokec2 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf3 \cb4 \strokec3         <div class="slds-m-top_medium slds-m-bottom_x-large">\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3             <h2 class="slds-text-heading_medium slds-m-bottom_medium">\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3                 Tree component with an <code>onselect</code> handler. Click an item in the tree to make a selection.\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3             </h2>\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3             <div class="slds-p-around_medium lgc-bg">\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3                 <lightning-tree items=\{items\} header="Profiles" onselect=\{handleOnselect\}></lightning-tree>\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3             </div>\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3     \cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3             <div class="slds-m-vertical_medium">\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3                 <p>The selected item is: <span class="slds-text-heading_small">\{selectedItemValue\}</span></p>\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3             </div>\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3         </div>\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3     </lightning-card>\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3 </template> -->\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3 <!--\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3 <template>\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3     <div class="slds-text-align_left">\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3         <lightning-card>\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3             <lightning-vertical-navigation selected-item=\{selectedItem\} onselect=\{handleSelect\} class="navigation">\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3                 <lightning-vertical-navigation-section label="Orchestration">\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3                     <lightning-vertical-navigation-item label="Summary" name="summary" style="font-size: medium;"></lightning-vertical-navigation-item>\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3                     <lightning-vertical-navigation-item label="Equifax" name="equifax" style="font-size: medium"></lightning-vertical-navigation-item>\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3                     <lightning-vertical-navigation-item label="GreenId" name="greenid" style="font-size: medium"></lightning-vertical-navigation-item>\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3                     <lightning-vertical-navigation-item label="Docusign" name="docusign" style="font-size: medium"></lightning-vertical-navigation-item>\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3                     <lightning-vertical-navigation-item label="nCIno Event Framework" name="eventframe" style="font-size: medium"></lightning-vertical-navigation-item>\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3                 </lightning-vertical-navigation-section>\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3                 <lightning-vertical-navigation-overflow>\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3                    <lightning-vertical-navigation-item label="Overflow 1" name="ovf1" style="font-size:medium"></lightning-vertical-navigation-item>\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3                    <lightning-vertical-navigation-item label="Overflow 2" name="ovf1" style="font-size:medium"></lightning-vertical-navigation-item>\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3                    <lightning-vertical-navigation-item label="Overflow 3" name="ovf1" style="font-size:medium"></lightning-vertical-navigation-item>\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3                 </lightning-vertical-navigation-overflow>\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3             </lightning-vertical-navigation>\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3         </lightning-card>\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3     </div>\cf2 \cb1 \strokec2 \
+\cf3 \cb4 \strokec3 </template> -->\cf2 \cb1 \strokec2 \
+\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf5 \cb4 \strokec5 <\cf6 \strokec6 template\cf5 \strokec5 >\cf2 \cb1 \strokec2 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf2 \cb4     \cf5 \strokec5 <\cf6 \strokec6 div\cf2 \strokec2  \cf7 \strokec7 class\cf2 \strokec2 =\cf8 \strokec8 "slds-text-align_left"\cf5 \strokec5 >\cf2 \cb1 \strokec2 \
+\cb4     \cf5 \strokec5 <\cf6 \strokec6 lightning-card\cf5 \strokec5 >\cf2 \cb1 \strokec2 \
+\cb4     \cf5 \strokec5 <\cf6 \strokec6 lightning-vertical-navigation\cf2 \strokec2  \cf7 \strokec7 selected-item\cf2 \strokec2 =\cf8 \strokec8 \{initiallySelected\}\cf5 \strokec5 >\cf2 \cb1 \strokec2 \
+\cb4         \cf5 \strokec5 <\cf6 \strokec6 lightning-vertical-navigation-item\cf2 \strokec2  \cf7 \strokec7 label\cf2 \strokec2 =\cf8 \strokec8 "Summary"\cf2 \strokec2  \cf7 \strokec7 name\cf2 \strokec2 =\cf8 \strokec8 "summary"\cf2 \strokec2  \cf7 \strokec7 style\cf2 \strokec2 =\cf8 \strokec8 "font-size:large;font-weight:bolder"\cf5 \strokec5 ></\cf6 \strokec6 lightning-vertical-navigation-item\cf5 \strokec5 >\cf2 \cb1 \strokec2 \
+\cb4         \cf5 \strokec5 <\cf6 \strokec6 template\cf2 \strokec2  \cf7 \strokec7 for:each\cf2 \strokec2 =\cf8 \strokec8 \{navigationData\}\cf2 \strokec2  \cf7 \strokec7 for:item\cf2 \strokec2 =\cf8 \strokec8 "section"\cf5 \strokec5 >\cf2 \cb1 \strokec2 \
+\cb4             \cf5 \strokec5 <\cf6 \strokec6 lightning-vertical-navigation-section\cf2 \strokec2  \cf7 \strokec7 key\cf2 \strokec2 =\cf8 \strokec8 \{section.label\}\cf2 \strokec2  \cf7 \strokec7 label\cf2 \strokec2 =\cf8 \strokec8 \{section.label\}\cf5 \strokec5 >\cf2 \cb1 \strokec2 \
+\cb4                 \cf5 \strokec5 <\cf6 \strokec6 template\cf2 \strokec2  \cf7 \strokec7 for:each\cf2 \strokec2 =\cf8 \strokec8 \{section.items\}\cf2 \strokec2  \cf7 \strokec7 for:item\cf2 \strokec2 =\cf8 \strokec8 "item"\cf5 \strokec5 >\cf2 \cb1 \strokec2 \
+\cb4                     \cf5 \strokec5 <\cf6 \strokec6 template\cf2 \strokec2  \cf7 \strokec7 if:true\cf2 \strokec2 =\cf8 \strokec8 \{item.icon\}\cf5 \strokec5 >\cf2 \cb1 \strokec2 \
+\cb4                         \cf5 \strokec5 <\cf6 \strokec6 lightning-vertical-navigation-item-icon\cf2 \strokec2  \cf7 \strokec7 key\cf2 \strokec2 =\cf8 \strokec8 \{item.name\}\cf2 \strokec2  \cf7 \strokec7 label\cf2 \strokec2 =\cf8 \strokec8 \{item.label\}\cf2 \strokec2  \cf7 \strokec7 name\cf2 \strokec2 =\cf8 \strokec8 \{item.name\}\cf2 \strokec2  \cf7 \strokec7 icon-name\cf2 \strokec2 =\cf8 \strokec8 \{item.icon\}\cf5 \strokec5 ></\cf6 \strokec6 lightning-vertical-navigation-item-icon\cf5 \strokec5 >\cf2 \cb1 \strokec2 \
+\cb4                     \cf5 \strokec5 </\cf6 \strokec6 template\cf5 \strokec5 >\cf2 \cb1 \strokec2 \
+\cb4                     \cf5 \strokec5 <\cf6 \strokec6 template\cf2 \strokec2  \cf7 \strokec7 if:false\cf2 \strokec2 =\cf8 \strokec8 \{item.icon\}\cf5 \strokec5 >\cf2 \cb1 \strokec2 \
+\cb4                         \cf5 \strokec5 <\cf6 \strokec6 lightning-vertical-navigation-item\cf2 \strokec2  \cf7 \strokec7 key\cf2 \strokec2 =\cf8 \strokec8 \{item.name\}\cf2 \strokec2  \cf7 \strokec7 label\cf2 \strokec2 =\cf8 \strokec8 \{item.label\}\cf2 \strokec2  \cf7 \strokec7 name\cf2 \strokec2 =\cf8 \strokec8 \{item.name\}\cf5 \strokec5 ></\cf6 \strokec6 lightning-vertical-navigation-item\cf5 \strokec5 >\cf2 \cb1 \strokec2 \
+\cb4                     \cf5 \strokec5 </\cf6 \strokec6 template\cf5 \strokec5 >\cf2 \cb1 \strokec2 \
+\cb4                 \cf5 \strokec5 </\cf6 \strokec6 template\cf5 \strokec5 >\cf2 \cb1 \strokec2 \
+\cb4             \cf5 \strokec5 </\cf6 \strokec6 lightning-vertical-navigation-section\cf5 \strokec5 >\cf2 \cb1 \strokec2 \
+\cb4         \cf5 \strokec5 </\cf6 \strokec6 template\cf5 \strokec5 >\cf2 \cb1 \strokec2 \
+\cb4     \cf5 \strokec5 </\cf6 \strokec6 lightning-vertical-navigation\cf5 \strokec5 >\cf2 \cb1 \strokec2 \
+\cb4     \cf5 \strokec5 </\cf6 \strokec6 lightning-card\cf5 \strokec5 >\cf2 \cb1 \strokec2 \
+\cb4     \cf5 \strokec5 </\cf6 \strokec6 div\cf5 \strokec5 >\cf2 \cb1 \strokec2 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf5 \cb4 \strokec5 </\cf6 \strokec6 template\cf5 \strokec5 >\cf2 \cb1 \strokec2 \
+\
+\
+\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf9 \cb4 \strokec9 import\cf2 \strokec2  \{ \cf7 \strokec7 LightningElement\cf2 \strokec2 , \cf7 \strokec7 track\cf2 \strokec2 \} \cf9 \strokec9 from\cf2 \strokec2  \cf8 \strokec8 'lwc'\cf2 \strokec2 ;\cb1 \
+\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf6 \cb4 \strokec6 const\cf2 \strokec2  \cf10 \strokec10 sections\cf2 \strokec2  = [\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf2 \cb4     \{\cb1 \
+\cb4         \cf7 \strokec7 label:\cf2 \strokec2  \cf8 \strokec8 'Enabled Plugins'\cf2 \strokec2 ,\cb1 \
+\cb4         \cf7 \strokec7 items:\cf2 \strokec2  [\cb1 \
+\cb4             \{\cb1 \
+\cb4                 \cf7 \strokec7 label:\cf2 \strokec2  \cf8 \strokec8 'Equifax'\cf2 \strokec2 ,\cb1 \
+\cb4                 \cf7 \strokec7 name:\cf2 \strokec2  \cf8 \strokec8 'equifax'\cf2 \strokec2 ,\cb1 \
+\cb4             \},\cb1 \
+\cb4             \{\cb1 \
+\cb4                 \cf7 \strokec7 label:\cf2 \strokec2  \cf8 \strokec8 'Ideology'\cf2 \strokec2 ,\cb1 \
+\cb4                 \cf7 \strokec7 name:\cf2 \strokec2  \cf8 \strokec8 'ideology'\cf2 \strokec2 ,\cb1 \
+\cb4             \},\cb1 \
+\cb4         ]\cb1 \
+\cb4     \},\cb1 \
+\cb4     \{\cb1 \
+\cb4         \cf7 \strokec7 label:\cf2 \strokec2  \cf8 \strokec8 'nCino Event FrameWork'\cf2 \strokec2 ,\cb1 \
+\cb4         \cf7 \strokec7 items:\cf2 \strokec2 [\cb1 \
+\cb4             \{\cb1 \
+\cb4                 \cf7 \strokec7 label:\cf2 \strokec2  \cf8 \strokec8 'Global Method'\cf2 \strokec2 ,\cb1 \
+\cb4                 \cf7 \strokec7 items:\cf2 \strokec2  [\cb1 \
+\cb4                     \{\cb1 \
+\cb4                         \cf7 \strokec7 label:\cf2 \strokec2  \cf8 \strokec8 'EFPIO.ConfigurationBase_V1.isActiveinRegistry'\cf2 \strokec2 ,\cb1 \
+\cb4                     \},\cb1 \
+\cb4                     \{\cb1 \
+\cb4                         \cf7 \strokec7 label:\cf2 \strokec2  \cf8 \strokec8 'EFPIO.ConfigurationBase_V1.AddPluginConfiguration'\cf2 \strokec2 ,\cb1 \
+\cb4                     \}\cb1 \
+\cb4                 ]\cb1 \
+\cb4             \}\cb1 \
+\cb4         ]\cb1 \
+\cb4     \},\cb1 \
+\cb4     \{\cb1 \
+\cb4         \cf7 \strokec7 label:\cf2 \strokec2  \cf8 \strokec8 'nCino Test Framework'\cf2 \strokec2 ,\cb1 \
+\cb4     \},\cb1 \
+\cb4     \{\cb1 \
+\cb4         \cf7 \strokec7 label:\cf2 \strokec2  \cf8 \strokec8 'nCino Deployment Framework'\cf2 \strokec2 ,\cb1 \
+\cb4     \}\cb1 \
+\cb4 ]\cb1 \
+\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf9 \cb4 \strokec9 export\cf2 \strokec2  \cf9 \strokec9 default\cf2 \strokec2  \cf6 \strokec6 class\cf2 \strokec2  \cf11 \strokec11 Verticalnav\cf2 \strokec2  \cf6 \strokec6 extends\cf2 \strokec2  \cf11 \strokec11 LightningElement\cf2 \strokec2  \{\cb1 \
+\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf2 \cb4     @\cf12 \strokec12 track\cf2 \strokec2  \cf7 \strokec7 selectedItem\cf2 \strokec2 ;\cb1 \
+\cb4     @\cf12 \strokec12 track\cf2 \strokec2  \cf7 \strokec7 currentContent\cf2 \strokec2 ;\cb1 \
+\cb4     @\cf12 \strokec12 track\cf2 \strokec2  \cf7 \strokec7 searchKey\cf2 \strokec2  = \cf8 \strokec8 ''\cf2 \strokec2 ;\cb1 \
+\cb4     \cf7 \strokec7 navigationData\cf2 \strokec2  = \cf10 \strokec10 sections\cf2 \strokec2 ;\cb1 \
+\cb4     \cf7 \strokec7 initiallySelected\cf2 \strokec2  = \cf8 \strokec8 'Summary'\cf2 \strokec2 ;\cb1 \
+\
+\cb4     \cf12 \strokec12 handleSelect\cf2 \strokec2 (\cf7 \strokec7 event\cf2 \strokec2 )\{\cb1 \
+\cb4         \cf6 \strokec6 const\cf2 \strokec2  \cf10 \strokec10 selected\cf2 \strokec2  = \cf7 \strokec7 event\cf2 \strokec2 .\cf7 \strokec7 detail\cf2 \strokec2 .\cf7 \strokec7 name\cf2 \strokec2 ;\cb1 \
+\cb4         \cf6 \strokec6 this\cf2 \strokec2 .\cf7 \strokec7 currentContent\cf2 \strokec2  = \cf10 \strokec10 selected\cf2 \strokec2 ;\cb1 \
+\cb4     \}\cb1 \
+\
+\cb4     \cf7 \strokec7 items\cf2 \strokec2  =[\cb1 \
+\cb4         \{\cf7 \strokec7 label:\cf8 \strokec8 'User'\cf2 \strokec2 , \cf7 \strokec7 name:\cf8 \strokec8 'user'\cf2 \strokec2 , \cf7 \strokec7 disabled:\cf6 \strokec6 false\cf2 \strokec2 , \cf7 \strokec7 expanded:\cf6 \strokec6 true\cf2 \strokec2 , \cb1 \
+\cb4             \cf7 \strokec7 items:\cf2 \strokec2  [\cb1 \
+\cb4                 \{\cf7 \strokec7 label:\cf8 \strokec8 'Standard User'\cf2 \strokec2 , \cf7 \strokec7 name:\cf8 \strokec8 'standard'\cf2 \strokec2 , \cf7 \strokec7 disabled:\cf6 \strokec6 false\cf2 \strokec2 , \cf7 \strokec7 expanded:\cf6 \strokec6 true\cf2 \strokec2 , \cf7 \strokec7 items:\cf2 \strokec2 [],\},\cb1 \
+\cb4                 \{\cf7 \strokec7 label:\cf8 \strokec8 'Community User'\cf2 \strokec2 , \cf7 \strokec7 name:\cf8 \strokec8 'community'\cf2 \strokec2 , \cf7 \strokec7 diabled:\cf6 \strokec6 false\cf2 \strokec2 , \cf7 \strokec7 expanded:\cf6 \strokec6 true\cf2 \strokec2 , \cf7 \strokec7 items:\cf2 \strokec2 [],\},\cb1 \
+\cb4                 \{\cf7 \strokec7 label:\cf8 \strokec8 'Admin User'\cf2 \strokec2 , \cf7 \strokec7 name:\cf8 \strokec8 'admin'\cf2 \strokec2 , \cf7 \strokec7 disabled:\cf6 \strokec6 false\cf2 \strokec2 , \cf7 \strokec7 exapnded:\cf6 \strokec6 true\cf2 \strokec2 , \cf7 \strokec7 items:\cf2 \strokec2 [],\}\cb1 \
+\cb4             ],\cb1 \
+\cb4         \},\cb1 \
+\cb4         \{\cf7 \strokec7 label:\cf8 \strokec8 'Custom User'\cf2 \strokec2 , \cf7 \strokec7 name:\cf8 \strokec8 'custom'\cf2 \strokec2 , \cf7 \strokec7 disabled:\cf6 \strokec6 false\cf2 \strokec2 , \cf7 \strokec7 expanded:\cf6 \strokec6 true\cf2 \strokec2 , \cb1 \
+\cb4             \cf7 \strokec7 items:\cf2 \strokec2  [\cb1 \
+\cb4                 \{\cf7 \strokec7 label:\cf8 \strokec8 'Custom Sales'\cf2 \strokec2 , \cf7 \strokec7 name:\cf8 \strokec8 'sales'\cf2 \strokec2 , \cf7 \strokec7 disabled:\cf6 \strokec6 false\cf2 \strokec2 , \cf7 \strokec7 expanded:\cf6 \strokec6 true\cf2 \strokec2 , \cf7 \strokec7 items:\cf2 \strokec2 [],\},\cb1 \
+\cb4                 \{\cf7 \strokec7 label:\cf8 \strokec8 'Custom Service'\cf2 \strokec2 , \cf7 \strokec7 name:\cf8 \strokec8 'service'\cf2 \strokec2 , \cf7 \strokec7 disabled:\cf6 \strokec6 false\cf2 \strokec2 , \cf7 \strokec7 expanded:\cf6 \strokec6 true\cf2 \strokec2 , \cf7 \strokec7 items:\cf2 \strokec2 [],\},\cb1 \
+\cb4                 \{\cf7 \strokec7 label:\cf8 \strokec8 'Custom Admin'\cf2 \strokec2 , \cf7 \strokec7 name:\cf8 \strokec8 'cadmin'\cf2 \strokec2 , \cf7 \strokec7 disabled:\cf6 \strokec6 false\cf2 \strokec2 , \cf7 \strokec7 expanded:\cf6 \strokec6 true\cf2 \strokec2 , \cf7 \strokec7 items:\cf2 \strokec2 [],\},\cb1 \
+\cb4             ],\cb1 \
+\cb4         \},\cb1 \
+\cb4     ];\cb1 \
+\cb4 \}\cb1 \
+\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf5 \cb4 \strokec5 <\cf6 \strokec6 targets\cf5 \strokec5 >\cf2 \cb1 \strokec2 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf2 \cb4         \cf5 \strokec5 <\cf6 \strokec6 target\cf5 \strokec5 >\cf2 \strokec2 lightning__AppPage\cf5 \strokec5 </\cf6 \strokec6 target\cf5 \strokec5 >\cf2 \cb1 \strokec2 \
+\cb4         \cf5 \strokec5 <\cf6 \strokec6 target\cf5 \strokec5 >\cf2 \strokec2 lightning__HomePage\cf5 \strokec5 </\cf6 \strokec6 target\cf5 \strokec5 >\cf2 \cb1 \strokec2 \
+\cb4         \cf5 \strokec5 <\cf6 \strokec6 target\cf5 \strokec5 >\cf2 \strokec2 lightning__RecordPage\cf5 \strokec5 </\cf6 \strokec6 target\cf5 \strokec5 >\cf2 \cb1 \strokec2 \
+\cb4     \cf5 \strokec5 </\cf6 \strokec6 targets\cf5 \strokec5 >\cf2 \cb1 \strokec2 \
+}
